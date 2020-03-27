@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.heading{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.logo{
+    padding: 60px 0 0 80px;
+}
+
+
+section{
+    padding: 80px 80px 0px 80px;
+    display: flex;
+}
+
+.two{
+    padding: 50px 0 0 50px;
+}
+
+.two h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.description{  
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6em;
+    opacity: .7;
+}
+
+.boton{
+    margin-top: 24px;
+    background-color: #fff;
+    border: transparent;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.boton p{
+    padding: 20px 65px;
+    font-size: 18px;
+    color:hsl(257, 40%, 49%);
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+    padding-bottom: 30px;
+}
+
+.icon{
+    padding: 10px 13px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.icon svg{
+    fill: #fff;
+    stroke: #fff;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .heading{
+        background-color: hsl(257, 40%, 49%);
+        background-image: url('images/bg-mobile.svg');
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 70px 70px 0px 70px;
+    }
+
+    .mobile img,
+    section img{
+        width: 100%;
+    }
+
+    .description, .two h1{
+        text-align: center;
+    }
+
+    .two{
+        padding: 0;
+        margin-top: 120px;
+    }
+
+    .description{  
+        font-size: 20px;
+        line-height: 1.6em;
+    }
+
+    .boton{
+        display: flex;
+        margin: 50px auto;
+        margin-bottom: 110px;
+    }
+
+    .boton p{
+        padding: 20px 150px;
+    }
+
+    .footer{
+        justify-content: center;
+        margin: 0;
+    }
+}
